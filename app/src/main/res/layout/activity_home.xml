@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_1"
+    tools:context=".HomeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="51dp"
+    android:gravity="center"  >
+
+    <LinearLayout
+        android:id="@+id/tictak"
+        android:layout_width="312dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/mathgame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/bottom_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/tic_tac_toe" />
+
+        <Button
+            android:id="@+id/game1"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#8591F6"
+            android:text="TicTacToe"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="30dp"
+            app:elevation="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mathgame"
+        android:layout_width="312dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/ludo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/bottom_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tictak" >
+
+
+        <ImageView
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/game" />
+
+        <Button
+            android:id="@+id/game2"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#8591F6"
+            android:text="Math Game"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ludo"
+        android:layout_width="312dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/bottom_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/mathgame" >
+
+
+        <ImageView
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/ludo" />
+
+        <Button
+            android:id="@+id/game3"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#8591F6"
+            android:text="Ludo Game"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

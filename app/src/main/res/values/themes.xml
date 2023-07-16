@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NavDrawer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#3E3E3C</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#1565C0</item>
+        <item name="colorSecondaryVariant">#0277BD</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.MainActivity" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#3E3E3C</item>
+        <item name="colorOnPrimary">#66FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#1565C0</item>
+        <item name="colorSecondaryVariant">#0277BD</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name= "CustomActivityAnimation" parent= "@android:style/Animation.Activity" >
+        <item name= "android:activityOpenEnterAnimation" >@anim/slide_in_right </item >
+        <item name= "android:activityOpenExitAnimation" >@anim/slide_out_left </item >
+    </style >
+    <style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme">
+
+    <!-- Customize your theme here. -->
+
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
+</resources>
